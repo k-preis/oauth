@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module version="4">
+  <component name="AdditionalModuleElements">
+    <content url="file://$MODULE_DIR$/auth-code-flow" dumb="true">
+      <sourceFolder url="file://$MODULE_DIR$/auth-code-flow/src/main" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/auth-code-flow/src/test" isTestSource="true" />
+    </content>
+  </component>
+  <component name="SonarLintModuleSettings">
+    <option name="uniqueId" value="75621fb2-49c0-4a18-b73a-5cf4d126d3bb" />
+  </component>
+</module>
