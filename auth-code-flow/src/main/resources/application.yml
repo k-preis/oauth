@@ -1,0 +1,10 @@
+#spring.thymeleaf.prefix=classpath:/templates/
+#spring.thymeleaf.suffix=.html
+#spring.thymeleaf.cache=false
+
+auth0:
+    clientId: W5AQYiq53tBnB2BLfKBBmbXhjSBDhUKZ
+    clientSecret: RY80LZXualCxKI4GPU8OF5eHwjZ6ZW2fPL8POgBHyJOBVoVlPvczonGK9shryR6r
+    scope: openid profile email read:users
+    audience: https://my-app/api
+    redirectUri: http://localhost:8080/auth/callback

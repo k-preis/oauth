@@ -1,0 +1,22 @@
+<!--<form action="#" th:action="@{/auth/home}" th:object="${userDataMap}" method="get">-->
+
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Employee Management System</title>
+
+    <head>
+        <title>Display Data from Map</title>
+    </head>
+    <body>
+        <h1>User Data</h1>
+        <div>
+            <p th:text="${userDataMap['name']}"></p>
+        </div>
+        <div>
+            <img th:src="${userDataMap['picture']}" alt="Image" />
+        </div>
+    </body>
+</html>
+<!--</form>-->
