@@ -1,5 +1,6 @@
 package com.preis.authcodeflow;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
 import jakarta.servlet.http.HttpServletResponse;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -26,7 +27,7 @@ public class AuthorizationController {
     }
 
     @GetMapping("/auth/callback")
-    void callback(String code, HttpServletResponse httpServletResponse) {
+    void callback(String code, HttpServletResponse httpServletResponse) throws JsonProcessingException {
         oAuthManager.loginUserByCode(code);
 
         String url = "/auth/home";

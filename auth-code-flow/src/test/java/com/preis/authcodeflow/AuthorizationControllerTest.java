@@ -23,8 +23,7 @@ class AuthorizationControllerTest {
     @Test
     void testLogin() throws Exception {
         mockMvc.perform(get("/auth/login")).andDo(print())
-                .andExpect(status().isOk())
-                .andExpect(content().string(containsString("Hello World")));
+                .andExpect(status().is3xxRedirection());
     }
 
 }
